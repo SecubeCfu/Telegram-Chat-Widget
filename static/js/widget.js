@@ -8,6 +8,6 @@ document.getElementById('clip').onclick = ()=> document.getElementById('file').c
 document.getElementById('file').onchange = async (e)=>{
   const fd = new FormData();                          // MDN FormData API
   fd.append('file', e.target.files[0]);               // :contentReference[oaicite:10]{index=10}
-  const res = await fetch('https://hook.make.com/XXXXXXXX', {method:'POST', body:fd});
+  const res = await fetch('https://hook.eu2.make.com/1104qicp1ybhsv6lfxgf0hcxame1si6l', {method:'POST', body:fd});
   addBubble('Moi', 'Fichier envoyé…');                // feedback local
 };
