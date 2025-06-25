@@ -2,10 +2,6 @@
 status:0,statusText:""});return e.type="error",e};var C=[301,302,303,307,308];m.redirect=function(e,t){if(C.indexOf(t)===-1)throw new RangeError("Invalid status code");return new m(null,{status:t,headers:{location:e}})},e.DOMException=self.DOMException;try{new e.DOMException}catch(t){e.DOMException=function(e,t){this.message=e,this.name=t;var n=Error(e);this.stack=n.stack},e.DOMException.prototype=Object.create(Error.prototype),e.DOMException.prototype.constructor=e.DOMException}v.polyfill=!0,self.fetch||(self.fetch=v,self.Headers=i,self.Request=h,self.Response=m),e.Headers=i,e.Request=h,e.Response=m,e.fetch=v,Object.defineProperty(e,"__esModule",{value:!0})})}});
 //# sourceMappingURL=widget.js.map
 
-<input type="file" id="file" style="display:none"/>
-<button id="clip">📎</button>
-document.getElementById('clip').onclick = ()=> document.getElementById('file').click();
-
 document.getElementById('file').onchange = async (e)=>{
   const fd = new FormData();                          // MDN FormData API
   fd.append('file', e.target.files[0]);               // :contentReference[oaicite:10]{index=10}
